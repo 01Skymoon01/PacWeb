@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+* 	Template Style
 *
 * ======================================================= */
 body {
@@ -1685,3 +1685,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+.pull-right {right: 0;left: auto;border-radius: 0; border-color: #ccc;}
+hr.soften {margin: 8px 0;background: #DDD;}
+.shopBtn {min-height: 34px;font-size: 14px;font-weight: bold;line-height: 34px;text-align: center;color: #fff;border-radius: 2px;background: #f89406;display:inline-block;padding:0 12px;border:0;}
+.shopBtn:hover {color: #fff; text-decoration:none; background:#F86706}
+.alignR{text-align:right;}
+/*************************************/

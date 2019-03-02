@@ -23,7 +23,7 @@
 
 	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -43,16 +43,20 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- JS Gestion Panier -->
+	<script src="store.js" async></script>
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"  async></script>
+<link rel="html" async href="Panier.html">
 	</head>
 	<body>
-		
+
 	<div class="fh5co-loader"></div>
-	
+
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
@@ -97,11 +101,11 @@
 						      </span>
 						    </div>
 						</li>
-						<li class="shopping-cart"><a href="#" class="cart"><span><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
+						<li class="shopping-cart"><a href="Panier.html" class="cart"><span type="number" class="number"><small>0</small><i class="icon-shopping-cart"></i></span></a></li>
 					</ul>
 				</div>
 			</div>
-			
+
 		</div>
 	</nav>
 
@@ -120,7 +124,7 @@
 			</div>
 		</div>
 	</header>
-	
+
 	<div id="fh5co-product">
 		<div class="container">
 			<div class="row animate-box">
@@ -136,13 +140,13 @@
 						<div class="product-grid" style="background-image:url(images/Chaise4.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Chaise AAC22 Hay Interieure , Gris Foncé</a></h3>
+							<h3 class="descption_cart">Chaise AAC22 Hay Interieure , Gris Foncé</h3>
 							<span class="price">150TND</span>
 						</div>
 					</div>
@@ -152,13 +156,13 @@
 						<div class="product-grid" style="background-image:url(images/Chaise5.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Chaise AAC25 Nokas Interieure , Grise</a></h3>
+							<h3 class="descption_cart">Chaise AAC25 Nokas Interieure , Grise</h3>
 							<span class="price">130TND</span>
 						</div>
 					</div>
@@ -168,13 +172,13 @@
 						<div class="product-grid" style="background-image:url(images/Chaise6.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Chaise AAZ en Teck Naturel , Naturelle </a></h3>
+							<h3 class="descption_cart">Chaise AAZ en Teck Naturel , Naturelle </h3>
 							<span class="price">160TND</span>
 						</div>
 					</div>
@@ -186,13 +190,13 @@
 						<div class="product-grid" style="background-image:url(images/TC1.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Table pied noir , Base carrée</a></h3>
+							<h3 class="descption_cart">Table pied noir , Base carrée</h3>
 							<span class="price">120TND</span>
 						</div>
 					</div>
@@ -202,13 +206,13 @@
 						<div class="product-grid" style="background-image:url(images/TC2.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Table H335 Pliante en Alu</a></h3>
+							<h3 class="descption_cart">Table H335 Pliante en Alu</h3>
 							<span class="price">100TND</span>
 						</div>
 					</div>
@@ -218,13 +222,13 @@
 						<div class="product-grid" style="background-image:url(images/TC3.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Table H340 Inox , Noire</a></h3>
+							<h3 class="descption_cart">Table H340 Inox , Noire</h3>
 							<span class="price">110TND</span>
 						</div>
 					</div>
@@ -236,13 +240,13 @@
 						<div class="product-grid" style="background-image:url(images/ChaiseL1.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Fauteuil F450 Velour , 1 Place , Gris</a></h3>
+							<h3 class="descption_cart">Fauteuil F450 Velour , 1 Place , Gris</h3>
 							<span class="price">150TND</span>
 						</div>
 					</div>
@@ -252,13 +256,13 @@
 						<div class="product-grid" style="background-image:url(images/ChaiseL2.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Fauteuil F460 Velour , 1 Place , Gris</a></h3>
+							<h3 class="descption_cart">Fauteuil F460 Velour , 1 Place , Gris</h3>
 							<span class="price">150TND</span>
 						</div>
 					</div>
@@ -268,13 +272,13 @@
 						<div class="product-grid" style="background-image:url(images/ChaiseL3.jpg);">
 							<div class="inner">
 								<p>
-									<a href="single.html" class="icon"><i class="icon-shopping-cart"></i></a>
+									<a class="icon"><i class="icon-shopping-cart"></i></a>
 									<a href="single.html" class="icon"><i class="icon-eye"></i></a>
 								</p>
 							</div>
 						</div>
 						<div class="desc">
-							<h3><a href="single.html">Fauteuil F500 Velour , 2 Place , Bleu</a></h3>
+							<h3 class="descption_cart">Fauteuil F500 Velour , 2 Place , Bleu</h3>
 							<span class="price">220TND</span>
 						</div>
 					</div>
@@ -351,7 +355,7 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; GeoConcept. All Rights Reserved.</small> 
+						<small class="block">&copy; GeoConcept. All Rights Reserved.</small>
 						<small class="block">28 <a href="http://freehtml5.co/" target="_blank">Rue Chimie</a> Megrine <a href="http://blog.gessato.com/" target="_blank">Tunis</a><a href="http://unsplash.co/" target="_blank"></a></small>
 					</p>
 					<p>
@@ -372,7 +376,7 @@
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -392,4 +396,3 @@
 
 	</body>
 </html>
-
