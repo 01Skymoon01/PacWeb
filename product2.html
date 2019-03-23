@@ -33,7 +33,6 @@
 
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="css/modal.css">
 
 	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -41,11 +40,10 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-
-
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -108,7 +106,7 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/Baniere1.jpg);">
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/Baniere3.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -116,7 +114,7 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Meubles</h1>
-							<h2>Interieurs</h2>
+							<h2>Extérieurs</h2>
 						</div>
 					</div>
 				</div>
@@ -128,21 +126,14 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<span>Meubles Extérieurs</span>
+					<span>Meubles Interieurs</span>
 					<h2>Produits</h2>
 					<p></p>
 				</div>
 			</div>
-
-
-
-
 			<div class="row" id="row1">
 
 			</div>
-
-
-
 		</div>
 	</div>
 
@@ -232,20 +223,19 @@
 	</footer>
 	</div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-	<div class="modal-content">
-  <div class="modal-body">
-		<img class="modalimg" src="images/chaise2.jpg"/>
-    <p class="modaltitle"></p>
-    <p class="modaldesc"></p>
-		<button onClick="closeModal()">Close</button>
+    <!-- Modal content -->
+  	<div class="modal-content">
+    <div class="modal-body">
+  		<img class="modalimg" src="images/chaise2.jpg"/>
+      <p class="modaltitle"></p>
+      <p class="modaldesc"></p>
+  		<button onClick="closeModal()">Close</button>
+    </div>
   </div>
-</div>
 
-</div>
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
@@ -266,18 +256,16 @@
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-	<script type="text/javascript">
+  <script type="text/javascript">
 
 	var arrayImage = ["images/ChaiseSkandinave.jpg", "images/Chaise2.jpg", "images/Chaise3.jpg","images/Table1.jpg","images/Table2.jpg","images/Table3.jpg","images/Fauteuil1.jpg","images/Fauteuil2.jpg","images/Fauteuil3.jpg"];
-	var arrayPrix = ["150TND","100TND","120TND","200TND","180TND","160TND","350TND","400TND","500TND"];
-	var arrayInfo = ["Chaise Skandinave","Chaise Gris","Chaise Naturelle","Table Grise","Table Maron","Table Noire","Fauteuil Gris","Fauteuil Noir","Fauteuil 2 places"];
+	var arrayPrix = ["1","2","3","4","5","6","7","8","9"];
+	var arrayInfo = ["a","b","c","d","e","f","g","h","i"];
 
 	var arrayLength = arrayImage.length;
 	var temp;
 
-	for (i = 0; i < arrayLength; i++)
-	{
+	for (i = 0; i < arrayLength; i++) {
 		temp = document.createElement('div');
 		temp.className = 'col-md-4 text-center animate-box';
 		temp2 = document.createElement('div');
@@ -288,6 +276,7 @@
 		temp4 = document.createElement('div');
 		temp4.className = "inner"
 		temp4.innerHTML = '<p><a href="#" class="icon"><i class="icon-shopping-cart"></i></a><a onclick="openModal('+i+');" class="icon"><i class="icon-eye"></i></a></p>';
+
 		temp5 = document.createElement('div');
 		temp5.className = "desc";
 		temp5.innerHTML = '<h3><a href="single.html">'+arrayInfo[i]+'</a></h3><span class="price">'+arrayPrix[i]+'</span>';
@@ -300,36 +289,31 @@
 	</script>
 	<script type="text/javascript">
 	// Get the modal
-	var arrayTitle = ["Chaise Skandinave", "Chaise2", "Chaise3","Table1","Table2","Table3","Fauteuil1","Fauteuil2","Fauteuil3"];
+	var arrayTitle = ["Chaise1", "Chaise2", "Chaise3","Table1","Table2","Table3","Fauteuil1","Fauteuil2","Fauteuil3"];
 	var arrayImage = ["images/ChaiseSkandinave.jpg", "images/Chaise2.jpg", "images/Chaise3.jpg","images/Table1.jpg","images/Table2.jpg","images/Table3.jpg","images/Fauteuil1.jpg","images/Fauteuil2.jpg","images/Fauteuil3.jpg"];
-	var arrayDesc = ["a", "b", "c","d","e","f","g","h","i"];
+	var arrayDesc = ["one", "two", "three","four","a","b","c","d","e"];
 	var modal = document.getElementById('myModal');
 
-	function openModal(i)
-	{
-	modal.style.display = "block";
-	$(document).ready(function()
-	{
+function openModal(i) {
+modal.style.display = "block";
+	$(document).ready(function() {
 	        document.getElementsByClassName("modalimg")[0].src = arrayImage[i];
 					document.getElementsByClassName("modaltitle")[0].innerHTML = arrayTitle[i];
 					document.getElementsByClassName("modaldesc")[0].innerHTML = arrayDesc[i];
-	});
-	}
+	    });
 
-function closeModal()
-{
+}
+
+function closeModal() {
 modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event)
-{
-  if (event.target == modal)
-	{
+window.onclick = function(event) {
+  if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 	</script>
-
 	</body>
 </html>

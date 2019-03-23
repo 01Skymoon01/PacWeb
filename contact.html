@@ -92,7 +92,12 @@
 								<li><a href="#">API</a></li>
 							</ul>
 						</li>
-						<li class="active"><a href="contact.html">Contact</a></li>
+						<li class="has-dropdown">
+							<a href="contact.html">Contact</a>
+							<ul class="dropdown">
+									<li><a href="RDV.html">Rendez-vous</a></li>
+								</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-xs-4 text-right hidden-xs menu-2">
@@ -120,8 +125,7 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Contact Us</h1>
-							<h2>Free html5 templates Made by <a href="http://freehtml5.co" target="_blank">freehtml5.co</a></h2>
+							<h1>Contactez-nous</h1>
 						</div>
 					</div>
 				</div>
@@ -135,52 +139,67 @@
 				<div class="col-md-5 col-md-push-1 animate-box">
 					
 					<div class="fh5co-contact-info">
-						<h3>Contact Information</h3>
+						<h3>Nos Informations</h3>
 						<ul>
-							<li class="address">198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-							<li class="phone"><a href="tel://1234567920">+ 1235 2355 98</a></li>
-							<li class="email"><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-							<li class="url"><a href="http://gettemplates.co">gettemplates.co</a></li>
+							<li class="address">01 Rue de la chimie Z.I <br>Ben Arous</li>
+							<li class="phone"><a href="tel://1234567920">+ 216 71 426 817</a></li>
+							<li class="email"><a href="mailto:info@yoursite.com">labiditammem@gmail.com</a></li>
+							<li class="url"><a href="http://www.artisansdart.tn/1223__geoconcept">artisansdart.tn/1223__geoconcept</a></li>
 						</ul>
 					</div>
 
 				</div>
 				<div class="col-md-6 animate-box">
-					<h3>Get In Touch</h3>
+					<h3>Passez une Réclamation</h3>
 					<form action="#">
 						<div class="row form-group">
 							<div class="col-md-6">
 								<!-- <label for="fname">First Name</label> -->
-								<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+								<input type="text" id="fname" class="form-control" placeholder="Prénom">
 							</div>
 							<div class="col-md-6">
 								<!-- <label for="lname">Last Name</label> -->
-								<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+								<input type="text" id="lname" class="form-control" placeholder="Nom">
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="email">Email</label> -->
-								<input type="text" id="email" class="form-control" placeholder="Your email address">
+								<input type="text" id="email" class="form-control" placeholder="Votre email">
+							</div>
+						</div>
+
+						<div class="row form-group">
+							<div class="col-md-12">
+								<!-- <label for="email">Email</label> -->
+								<input name="userfile" type="file" accept="application/pdf, application/vnd.ms-excel" />
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="subject">Subject</label> -->
-								<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+								<!--<input type="text" id="subject" class="form-control" placeholder="Sujet">-->
+								<FORM class="form-control" id="subject">
+										<SELECT name="nom" size="1">
+										<OPTION>Livraison non reçu
+										<OPTION>Livraison non coforme
+										<OPTION>Réparation et maintenance sous garantie
+										<OPTION>Autre..
+										</SELECT>
+										</FORM>
 							</div>
 						</div>
 
 						<div class="row form-group">
 							<div class="col-md-12">
 								<!-- <label for="message">Message</label> -->
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Donnez-nous plus de details"></textarea>
 							</div>
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Send Message" class="btn btn-primary">
+							<input type="submit" value="Envoyez" class="btn btn-primary">
 						</div>
 
 					</form>		
@@ -190,14 +209,12 @@
 		</div>
 	</div>
 
-	<div id="map" class="animate-box" data-animate-effect="fadeIn"></div>
-
 	<div id="fh5co-started">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Newsletter</h2>
-					<p>Just stay tune for our latest Product. Now you can subscribe</p>
+					<h2>Abonnez-vous</h2>
+					<p>Abonnez-vous pour ne ratez aucune nouveauté dèz maintenant</p>
 				</div>
 			</div>
 			<div class="row animate-box">
@@ -210,7 +227,7 @@
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-6">
-							<button type="submit" class="btn btn-default btn-block">Subscribe</button>
+							<button type="submit" class="btn btn-default btn-block">Inscrivez-vous</button>
 						</div>
 					</form>
 				</div>
@@ -222,8 +239,8 @@
 		<div class="container">
 			<div class="row row-pb-md">
 				<div class="col-md-4 fh5co-widget">
-					<h3>Shop.</h3>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+					<h3>Geoconcept</h3>
+					<p>A Saint-Gobain Megrine, Geoconcept Geoverde est spécialisé dans la fabrication du mobilier professionnel notamment pour hôtels, restaurants et lounges. Meubles pour intérieur et pour extérieur. De belles lignes et un large choix de modèles de chaises et canapés disponibles en coloris divers. Geconcept livre sur l’ensemble du territoire tunisien.</p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="fh5co-footer-links">
@@ -231,7 +248,7 @@
 						<li><a href="#">Help</a></li>
 						<li><a href="#">Contact</a></li>
 						<li><a href="#">Terms</a></li>
-						<li><a href="#">Meetups</a></li>
+						<li><a href="#">Rendez-vous</a></li>
 					</ul>
 				</div>
 

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign up/ Sign in</title>
+  <script src="scripts.js"></script>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="styleSign.css">
+
+  
+</head>
+
+<body>
+
+  <div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label> <!--checked to open the sign in page by default-->
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<!--Sign in division-->
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label" >Username</label>
+					<input id="user" type="text" class="input" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label" >Password</label>
+					<input id="pass" type="password" class="input" data-type="password" required >
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group">
+					<input type="submit" class="button" value="Sign In" onclick="CheckSignIn();">
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="#forgot">Forgot Password?</a>
+				</div>
+			</div>
+
+			<!--Sign up division-->
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="newUser" type="text" class="input" placeholder="Type your username" required>
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="newPass" type="password" class="input" placeholder="Type your password" data-type="password" required>
+				</div>
+				<div class="group">
+					<label for="pass2" class="label">Repeat Password</label>
+					<input id="OtheNewPass" type="password" class="input" data-type="password" placeholder="Retype your username" required>
+				</div>
+				<div class="group">
+					<label for="mail" class="label">Email Address</label>
+					<input id="mail" type="text" class="input" placeholder="Type your E-mail adress" required>
+				</div>
+				<div class="group">
+					
+					<input type="submit" class="button" value="Sign Up" onclick="CheckSignUp();">
+
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+
+</html>
